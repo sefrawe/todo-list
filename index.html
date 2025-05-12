@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待办事项1</title>
+</head>
+<body>
+<style>
+    body{
+        background: linear-gradient(to right, purple, rgb(58, 58, 228));
+    }
+    .todo-app{width: 96%;
+        height: 500px;
+        background: aliceblue;
+        border-radius: 10px;
+        margin-top:20px;
+        margin-left: 2%;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .title{
+        font-size: 40px;
+        font-weight: 1000;
+        text-align: center;
+        margin-top: 1px;
+    }
+    .add-todo {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10px;
+
+    }
+    .add-todo-input{
+        border:1px solid darkgrey;
+        outline: none;
+        border-radius: 10px 0 0 10px;
+        width: 80%;
+        height: 45px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .add-botton{
+        height: 47px;
+        width: 120px;
+        border-radius:0 10px 10px 0 ;
+        background:linear-gradient(to right, purple, rgb(58, 58, 228)) ;
+        color: white;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    .item1{
+        display: flex;
+        margin: 20px auto;
+        width: 80%;
+        box-sizing: border-box;
+        height: 50px;
+        align-items: center;
+        box-shadow: darkgrey 0px 0px 10px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    .checkbox{
+        cursor: pointer;
+    }
+    .checkbox-开洗衣机{
+        margin-left: 5px;
+    }
+    .delete{
+        margin-right: 20px;
+        color: red;
+        cursor: pointer;
+        user-select: none;
+    }
+    .另一个item1{
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+
+
+
+
+</style>
+
+
+<div class="todo-app">
+     <div class="title">xxx的待办事项</div>
+     <div class="add-todo">
+        <input class="add-todo-input" type="text" placeholder="add a todo">
+
+        </input>
+        <div class="add-botton">
+        add todo
+        </div>
+    </div>
+    <div class="item1 另一个item1">
+        <div class="checkbox-开洗衣机">
+        <input class="checkbox" type="checkbox">
+        <span class="开洗衣机">开洗衣机</span>
+          </div>
+        <div class="delete">delete</div>
+
+    </div>
+    <div class="item1">
+        <div class="checkbox-开洗衣机">
+        <input class="checkbox" type="checkbox">
+        <span class="开洗衣机">晒衣服</span>
+          </div>
+        <div class="delete">delete</div>
+
+    </div><div class="item1">
+        <div class="checkbox-开洗衣机">
+        <input class="checkbox" type="checkbox">
+        <span class="开洗衣机">学Java</span>
+          </div>
+        <div class="delete">delete</div>
+
+    </div>
+        
+</div>
+
+    
+
+
+
+
+    
+</body>
+</html>
